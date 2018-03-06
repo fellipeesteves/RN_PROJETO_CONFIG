@@ -1,1 +1,1 @@
-# configsBasicaRN
+# basica_config_txt
