@@ -44,8 +44,7 @@ yarn add babel-eslint eslint-config-airbnb eslint-plugin-react-native --dev
 https://gist.github.com/diego3g/fdc8dc51fd60b88e2e3611fb1b59d380
 
 ou
-
-
+{
   "parser": "babel-eslint",
   "env": {
     "browser": true,
@@ -72,7 +71,8 @@ ou
     "arrow-body-style": 0,
     "no-underscore-dangle": "off",
     "arrow-parens": [2, "as-needed"],
-    "semi": "off"
+    "semi": "off",
+    "function-paren-newline": ["error", { "minItems": 3 }]
   },
   "settings": {
     "import/resolver": {
