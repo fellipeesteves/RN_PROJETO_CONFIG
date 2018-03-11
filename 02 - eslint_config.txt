@@ -72,7 +72,7 @@ ou
     "no-underscore-dangle": "off",
     "arrow-parens": [2, "as-needed"],
     "semi": "off",
-    "function-paren-newline": ["error", { "minItems": 3 }]
+    "function-paren-newline": ["error", "consistent"]
   },
   "settings": {
     "import/resolver": {
