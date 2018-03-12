@@ -1,3 +1,6 @@
+00 --> git config --global user.name (Colocar um nome padrao para o usuário)
+00 --> git config --global user.email (Colocar um nome padrao para o email)
+00 --> git config --global -l (verificar todas as config padrao)
 01 --> git init = indicar o inicio do gerenciamento de versão
 02 --> git status = verificar arquivos que que sofreram alteração
 03 --> git add = informar para o git os arquvios quais serao adicinados na historia

@@ -21,3 +21,17 @@ import store from 'store';
 <Provider store={store}>
   <View />
 </Provider>
+
+############################################
+
+yarn add reactotron-redux
+
+import { createStore, applyMiddleware } from 'redux'
+import reducers from './reducers'
+
+const middleware = [];
+
+const createApppropriateStore = __DEV__ ? console.tron.createStore : createStore
+const store = createApppropriateStore(reducers, applyMiddleware(...middleware))
+
+export default store
