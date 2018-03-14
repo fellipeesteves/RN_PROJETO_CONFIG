@@ -31,5 +31,16 @@ import ReactotronConfig from './config/ReactotronConfig';
 //formar de usar, desde que tenha feito as config acima
 console.tron.log('Teste');
 
+# Caso queira rodar ele em um dispositivo fisico ( decubra o seu ip e coloque o connect da seguinte forma)
 
+import Reactotron from 'reactotron-react-native'
+
+const tron = Reactotron.configure()
+  .useReactNative()
+  .connect()
+  .configure({ host: '192.168.0.0' })
+
+tron.clear()
+
+console.tron = tron
 
