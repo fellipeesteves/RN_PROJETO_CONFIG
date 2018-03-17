@@ -24,6 +24,24 @@ import store from 'store';
 
 ############################################
 
+dentro da pasta config no arquivo ReactotronConfig
+
+import Reactotron from 'reactotron-react-native'
+import { reactotronRedux } from 'reactotron-redux'
+
+if (__DEV__) {
+  const tron = Reactotron.configure()
+    .useReactNative()
+    .use(reactotronRedux())
+    .connect()
+
+  tron.clear()
+
+  console.tron = tron
+}
+
+############################################
+
 yarn add reactotron-redux
 
 import { createStore, applyMiddleware } from 'redux'
