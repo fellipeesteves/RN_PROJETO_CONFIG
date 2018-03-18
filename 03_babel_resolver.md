@@ -1,9 +1,11 @@
 # Babel Resolver
 #### Definir a pasta src como padrao do projeto, caminho relativo, remover o './'
 
+##### * Abra o terminal na pasta do projeto e insira os seguintes comandos, para que possamos fazer a instalação:
+
 `yarn add babel-plugin-module-resolver eslint-import-resolver-babel-module --dev`
 
-* Dentro do arquivo .babelrc colocar as seguintes configs
+* _Dentro do arquivo .babelrc, que se encontra na raiz do seu projeto colocar as seguinte código._
 
 ```json
 {

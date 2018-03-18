@@ -1,6 +1,6 @@
 #### Criar o arquivo ".editorconfig", dentro pasta raiz e inserir o codigo abaixo:
 
-```js
+```
 root = true
 [*]
 charset = utf-8
