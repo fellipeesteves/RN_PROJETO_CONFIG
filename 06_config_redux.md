@@ -1,6 +1,6 @@
 # Configração REDUX
 
-* Instalar pacote no projeto
+* Instalar pacotes no projeto
 
 `yarn add redux react-redux`
 
@@ -15,6 +15,8 @@ export default store
 
 * Dentro da raiz _src_ no arquivo* index.js* inserir os seguintes imports
 
+_Lembrando que estou utilizando o babel module resolve para usar os caminhos relativos dos arquvios_
+
 ```js
 import { Provider } from 'react-redux'
 import store from 'store'
@@ -23,6 +25,8 @@ import store from 'store'
   <View />
 </Provider>
 ```
+
+* Criar pasta reducers dentro da Store
 
 * Pacote para o Reactotron pegar as features do redux
 
