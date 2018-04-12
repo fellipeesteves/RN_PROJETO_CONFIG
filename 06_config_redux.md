@@ -18,12 +18,19 @@ export default store
 _Lembrando que estou utilizando o babel module resolve para usar os caminhos relativos dos arquvios_
 
 ```js
+import React from 'react'
+import { View } from 'react-native'
 import { Provider } from 'react-redux'
 import store from 'store'
+import 'config/ReactotronConfig'
 
-<Provider store={store}>
-  <View />
-</Provider>
+const App = () => (
+  <Provider store={store}>
+    <View />
+  </Provider>
+)
+
+export default App
 ```
 
 * Criar pasta reducers dentro da Store
