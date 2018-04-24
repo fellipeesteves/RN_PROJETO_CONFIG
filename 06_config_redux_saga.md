@@ -2,12 +2,12 @@
 
 * Instalar pacotes no projeto
 
-`yarn add redux react-redux`
-`yarn add reactotron-redux` _caso use o reactotron_
-`yarn add redux-saga`
-`yanr add reactotron-redux-saga` _caso use o reactotron_
+* `yarn add redux react-redux`
+* `yarn add reactotron-redux` _caso use o reactotron_
+* `yarn add redux-saga`
+* `yanr add reactotron-redux-saga` _caso use o reactotron_
 
-* Dentro da pasta src criar uma pasta _store_ e dentro dela o arquivo _index.js_ com o seguinte conteudo
+* Dentro da pasta _src_ criar uma pasta chamada _store_ e dentro dela o arquivo _index.js_ com o seguinte conteúdo:
 
 ```js
 import { createStore, applyMiddleware } from 'redux'
@@ -29,7 +29,7 @@ export default store
 
 ```
 
-* Dentro da pasta _store_ , criar a pasta _ducks_ e dentro dela o _index.js_
+* Dentro da pasta _store_ , criar a pasta _ducks_ e dentro dela o _index.js_ com o seguinte conteúdo:
 
 ```js
 import { combineReducers } from 'redux'
@@ -40,7 +40,7 @@ export default combineReducers({
 
 ```
 
-* Dentro da pasta _store_ , criar a pasta _sagas_ e dentro dela o _index.js_
+* Dentro da pasta _store_ , criar a pasta _sagas_ e dentro dela o _index.js_ com o seguinte conteúdo:
 
 ```js
 import { all } from 'redux-saga/effects'
