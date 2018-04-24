@@ -1,13 +1,13 @@
 # Configração REDUX SAGA
 
-* Instalar pacotes no projeto
+### Instalar pacotes no projeto
 
 * `yarn add redux react-redux`
 * `yarn add reactotron-redux` _caso use o reactotron_
 * `yarn add redux-saga`
-* `yanr add reactotron-redux-saga` _caso use o reactotron_
+* `yarn add reactotron-redux-saga` _caso use o reactotron_
 
-* Dentro da pasta _src_ criar uma pasta chamada _store_ e dentro dela o arquivo _index.js_ com o seguinte conteúdo:
+Dentro da pasta _src_ criar uma pasta chamada _store_ e dentro dela o arquivo _index.js_ com o seguinte conteúdo:
 
 ```js
 import { createStore, applyMiddleware } from 'redux'
@@ -29,7 +29,7 @@ export default store
 
 ```
 
-* Dentro da pasta _store_ , criar a pasta _ducks_ e dentro dela o _index.js_ com o seguinte conteúdo:
+Dentro da pasta _store_ , criar a pasta _ducks_ e dentro dela o _index.js_ com o seguinte conteúdo:
 
 ```js
 import { combineReducers } from 'redux'
@@ -40,7 +40,7 @@ export default combineReducers({
 
 ```
 
-* Dentro da pasta _store_ , criar a pasta _sagas_ e dentro dela o _index.js_ com o seguinte conteúdo:
+Dentro da pasta _store_ , criar a pasta _sagas_ e dentro dela o _index.js_ com o seguinte conteúdo:
 
 ```js
 import { all } from 'redux-saga/effects'
@@ -51,7 +51,7 @@ export default function* rootSaga() {
 
 ```
 
-* Dentro da raiz _src_ no arquivo _index.js_ inserir os seguintes imports
+Dentro da raiz _src_ no arquivo _index.js_ inserir os seguintes imports
 
 _Lembrando que estou utilizando o babel module resolve para usar os caminhos relativos dos arquvios_
 
@@ -73,5 +73,21 @@ export default App
 
 ```
 
+Dentro do pasta config no arquivo _ReactotronConfig.js_
 
+```js
+import Reactotron from 'reactotron-react-native'
+import { reactotronRedux } from 'reactotron-redux'
+import sagaPlugin from 'reactotron-redux-saga'
 
+const tron = Reactotron.configure()
+  .useReactNative()
+  .use(reactotronRedux())
+  .use(sagaPlugin())
+  .connect()
+
+tron.clear()
+
+console.tron = tron
+
+```
