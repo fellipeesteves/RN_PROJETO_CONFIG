@@ -2,10 +2,10 @@
 
 ### Instalar pacotes no projeto
 
-* `yarn add redux react-redux`
-* `yarn add reactotron-redux` _caso use o reactotron_
-* `yarn add redux-saga`
-* `yarn add reactotron-redux-saga` _caso use o reactotron_
+* `npm install redux react-redux --dev`
+* `npm install reactotron-redux --dev` _caso use o reactotron_
+* `npm install redux-saga --dev`
+* `npm install add reactotron-redux-saga --dev ` _caso use o reactotron_
 
 Dentro da pasta _src_ criar uma pasta chamada _store_ e dentro dela o arquivo _index.js_ com o seguinte conteúdo:
 
