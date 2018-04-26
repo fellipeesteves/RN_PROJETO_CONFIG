@@ -1,0 +1,47 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "sync.gist": "20151bc3592e3fc6af97fb6889f4ce1f",
+    "sync.lastUpload": "2018-04-25T13:50:30.883Z",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastDownload": "",
+    "sync.forceDownload": false,
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true,
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "all",
+    "workbench.startupEditor": "newUntitledFile",
+    "explorer.confirmDelete": false,
+    "editor.tabSize": 2,
+    "explorer.confirmDragAndDrop": false,
+    "editor.snippetSuggestions": "bottom",
+    "editor.wordWrap": "on",
+    "workbench.colorTheme": "Dracula",
+    "editor.fontFamily": "SF Mono",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.vscode": true,
+        "**/.idea": true
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "comment",
+                    "punctuation.definition.comment",
+                    "variable.language",
+                    "keyword",
+                    "storage",
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    }
+}
