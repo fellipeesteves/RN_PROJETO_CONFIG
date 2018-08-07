@@ -18,16 +18,18 @@ Quick Start for React Native
 
 com o seguinte conteúdo
 ```js
-import Reactotron from 'reactotron-react-native';
+import Reactotron from 'reactotron-react-native'
 
-const tron = Reactotron
-  .configure()
-  .useReactNative()
-  .connect();
+if (__DEV__) {
+  const tron = Reactotron
+    .configure()
+    .useReactNative()
+    .connect()
 
-tron.clear(); //Limpa o console a cada requisição de atualizacção
+  tron.clear()
 
-console.tron = tron; //Gera um console.log global para uso em qualquer arquivo
+  console.tron = tron
+}
 ```
 
 - fazer o import ReactotronConfig dentro do arquivo no qual você quer debugar
