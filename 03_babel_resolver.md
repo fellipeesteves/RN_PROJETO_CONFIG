@@ -3,7 +3,7 @@
 
 ##### * Abra o terminal na pasta do projeto e insira os seguintes comandos, para que possamos fazer a instalação:
 
-`npm install babel-plugin-module-resolver eslint-import-resolver-babel-module --dev`
+`npm install -D babel-plugin-module-resolver eslint-import-resolver-babel-module`
 
 * _Dentro do arquivo .babelrc, que se encontra na raiz do seu projeto colocar as seguinte código._
 

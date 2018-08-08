@@ -10,7 +10,7 @@ Quick Start for React Native
 
 - Instalar dependencias no projeto
 
-`npm i --save-dev reactotron-react-native`
+`npm i -D reactotron-react-native`
 
 - Criar pasta config dentro do src e criar o arquivo
 

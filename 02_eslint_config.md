@@ -1,6 +1,6 @@
 ## Eslint config - baseado nas config do airbnb
 
-* #### Primeiro instalar o eslint global
+- #### Primeiro instalar o eslint global
 
 `npm install -g eslint`
 
@@ -20,35 +20,35 @@ Sublime Text
 
 ---
 
-* #### Verificar a última versão do eslint-airbnb
-* #### Rode o comanado abaixo para no cmd ou terminal para verificar a ultima versão
+- #### Verificar a última versão do eslint-airbnb
+- #### Rode o comanado abaixo para no cmd ou terminal para verificar a ultima versão
 
 `npm info "eslint-config-airbnb@latest" peerDependencies`
 
-* #### Comando irá imprimir as seguintes informações (não copiar daqui pois, pode estar defasado)
+- #### Comando irá imprimir as seguintes informações (não copiar daqui pois, pode estar defasado)
 
 ```json
 {
-  "eslint": "^4.9.0",
-  "eslint-plugin-import": "^2.7.0",
-  "eslint-plugin-jsx-a11y": "^6.0.2",
-  "eslint-plugin-react": "^7.4.0"
+  "eslint": "^4.19.1",
+  "eslint-plugin-import": "^2.12.0",
+  "eslint-plugin-jsx-a11y": "^6.0.3",
+  "eslint-plugin-react": "^7.9.1"
 }
 ```
 
-* _OBS o código acima virar com aspas simples ao invés de dupla ao passar para o json, não esquecer de mudar._
+- _OBS o código acima virar com aspas simples ao invés de dupla ao passar para o json, não esquecer de mudar._
 
 _Pegar a dependência de retorno e inserir no package.json no laço devDependences._
 
 ---
 
-* #### Rodar comandos para instalar dependências
+- #### Rodar comandos para instalar dependências
 
 `npm install`
 
 Logo após instalar as dependências acima, instalar os seguintes pacotes
 
-`npm install babel-eslint eslint-config-airbnb eslint-plugin-react-native --dev`
+`npm install -D babel-eslint eslint-config-airbnb eslint-plugin-react-native`
 
 depois de instalar todas as dependencias criar o arquivo _.eslintrc_, na pasta raiz com seguinte codigo
 
@@ -100,7 +100,7 @@ ou
 
 _No modelo do eslint acima, tem algumas regras adicionais que foram inseridas, por gosto pessoal._
 
-* _Outra OBS: Lembrando que esse arquvivo ja tem um código para usar o babel resolver, caso você nao use, por favor remover_
+- _Outra OBS: Lembrando que esse arquvivo ja tem um código para usar o babel resolver, caso você nao use, por favor remover_
 
 ```json
 settings": {

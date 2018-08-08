@@ -2,10 +2,10 @@
 
 ### Instalar pacotes no projeto
 
-* `npm install redux react-redux --dev`
-* `npm install reactotron-redux --dev` _caso use o reactotron_
-* `npm install redux-saga --dev`
-* `npm install add reactotron-redux-saga --dev ` _caso use o reactotron_
+* `npm install -D redux react-redux`
+* `npm install -D reactotron-redux` _caso use o reactotron_
+* `npm install -D redux-saga`
+* `npm install -D reactotron-redux-saga ` _caso use o reactotron_
 
 Dentro da pasta _src_ criar uma pasta chamada _store_ e dentro dela o arquivo _index.js_ com o seguinte conteúdo:
 
