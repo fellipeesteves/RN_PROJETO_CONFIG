@@ -44,11 +44,12 @@ _Pegar a dependência de retorno e inserir no package.json no laço devDependenc
 
 - #### Rodar comandos para instalar dependências
 
-`npm install`
+`yarn`
 
 Logo após instalar as dependências acima, instalar os seguintes pacotes
 
 `npm install -D babel-eslint eslint-config-airbnb eslint-plugin-react-native`
+`yarn add babel-eslint eslint-config-airbnb eslint-plugin-react-native --dev`
 
 depois de instalar todas as dependencias criar o arquivo _.eslintrc_, na pasta raiz com seguinte codigo
 
