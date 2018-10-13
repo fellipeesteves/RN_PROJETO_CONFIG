@@ -2,7 +2,7 @@
 
 - #### Primeiro instalar o eslint global
 
-`npm install -g eslint`
+`yarn add global eslint`
 
 _(no seu editor de texto instalar o pacote do eslint)_
 
@@ -48,7 +48,6 @@ _Pegar a dependência de retorno e inserir no package.json no laço devDependenc
 
 Logo após instalar as dependências acima, instalar os seguintes pacotes
 
-`npm install -D babel-eslint eslint-config-airbnb eslint-plugin-react-native`
 `yarn add babel-eslint eslint-config-airbnb eslint-plugin-react-native --dev`
 
 depois de instalar todas as dependencias criar o arquivo _.eslintrc_, na pasta raiz com seguinte codigo
@@ -90,6 +89,9 @@ ou
   },
   "settings": {
     "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      },
       "babel-module": {}
     }
   },

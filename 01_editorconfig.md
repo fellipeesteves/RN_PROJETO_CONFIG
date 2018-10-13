@@ -1,5 +1,7 @@
 #### Criar o arquivo ".editorconfig", dentro pasta raiz e inserir o codigo abaixo:
 
+- Definir um padrão de espaciamento e padrão de codigo para todas as plataformas!
+
 ```
 root = true
 [*]
