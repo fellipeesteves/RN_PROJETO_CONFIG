@@ -1,47 +1,59 @@
 {
-    "workbench.iconTheme": "material-icon-theme",
-    "sync.gist": "20151bc3592e3fc6af97fb6889f4ce1f",
-    "sync.lastUpload": "2018-04-25T13:50:30.883Z",
-    "sync.autoDownload": false,
-    "sync.autoUpload": false,
-    "sync.lastDownload": "",
-    "sync.forceDownload": false,
-    "sync.host": "",
-    "sync.pathPrefix": "",
-    "sync.quietSync": false,
-    "sync.askGistName": false,
-    "sync.removeExtensions": true,
-    "sync.syncExtensions": true,
-    "prettier.semi": false,
-    "prettier.singleQuote": true,
-    "prettier.trailingComma": "all",
-    "workbench.startupEditor": "newUntitledFile",
-    "explorer.confirmDelete": false,
-    "editor.tabSize": 2,
-    "explorer.confirmDragAndDrop": false,
-    "editor.snippetSuggestions": "bottom",
-    "editor.wordWrap": "on",
-    "workbench.colorTheme": "Dracula",
-    "editor.fontFamily": "SF Mono",
-    "files.exclude": {
-        "**/.git": true,
-        "**/.vscode": true,
-        "**/.idea": true
-    },
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": [
-                    "comment",
-                    "punctuation.definition.comment",
-                    "variable.language",
-                    "keyword",
-                    "storage",
-                ],
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            }
-        ]
-    }
+  "prettier.trailingComma": "all",
+  "editor.snippetSuggestions": "bottom",
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.vscode": true,
+    "**/.idea": true
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "punctuation.definition.comment",
+          "variable.language",
+          "keyword",
+          "storage"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "sync.gist": "adcadb4ac896da8a64f41d6c65a835a9",
+  "sync.host": "",
+  "sync.pathPrefix": "",
+  "sync.quietSync": false,
+  "sync.askGistName": false,
+  "sync.removeExtensions": true,
+  "sync.syncExtensions": true,
+  "sync.autoDownload": false,
+  "sync.autoUpload": false,
+  "sync.lastUpload": "2018-08-20T14:08:42.010Z",
+  "sync.lastDownload": "2018-08-07T04:17:31.243Z",
+  "sync.forceDownload": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "explorer.confirmDelete": false,
+  "emmet.includeLanguages": {
+    "nunjucks": "html"
+  },
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "editor.formatOnSave": true,
+  "javascript.format.enable": false,
+  "prettier.eslintIntegration": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.parameterHints.enabled": false,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "workbench.colorTheme": "Dracula",
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "monospace",
+  "markdown.preview.fontSize": 12,
+  "terminal.integrated.fontWeightBold": "normal"
 }
