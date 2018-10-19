@@ -66,6 +66,11 @@ ou
   "plugins": ["react-native", "jsx-a11y", "import"],
   "extends": ["airbnb", "plugin:react-native/all"],
   "rules": {
+    "react/destructuring-assignment": [
+      true,
+      "always",
+      { "ignoreClassFields": true }
+    ],
     "react/jsx-filename-extension": [
       "error",
       {
@@ -85,7 +90,23 @@ ou
     "no-underscore-dangle": "off",
     "arrow-parens": [2, "as-needed"],
     "semi": "off",
-    "function-paren-newline": ["error", "consistent"]
+    "function-paren-newline": ["error", "consistent"],
+    "prefer-destructuring": [
+      "error",
+      {
+        "VariableDeclarator": {
+          "array": false,
+          "object": false
+        },
+        "AssignmentExpression": {
+          "array": false,
+          "object": false
+        }
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ]
   },
   "settings": {
     "import/resolver": {
