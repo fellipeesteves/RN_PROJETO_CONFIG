@@ -20,51 +20,28 @@ Sublime Text
 
 ---
 
-- #### Verificar a última versão do eslint-airbnb
-- #### Rode o comanado abaixo para no cmd ou terminal para verificar a ultima versão
+- #### Para iniciar o uso do eslint no projeto é necessário realizar a instalação das dependencias usando os comandos:
 
-`npm info "eslint-config-airbnb@latest" peerDependencies`
+* yarn add eslint -D
+* yarn eslint --init
+* -> Use a popular guide
+* -> airbnb
+* -> json
 
-- #### Comando irá imprimir as seguintes informações (não copiar daqui pois, pode estar defasado)
+- Instalar todas as dependencias
 
-```json
-{
-  "eslint": "^4.19.1",
-  "eslint-plugin-import": "^2.12.0",
-  "eslint-plugin-jsx-a11y": "^6.0.3",
-  "eslint-plugin-react": "^7.9.1"
-}
-```
-
-- _OBS o código acima virar com aspas simples ao invés de dupla ao passar para o json, não esquecer de mudar._
-
-_Pegar a dependência de retorno e inserir no package.json no laço devDependences._
-
----
-
-- #### Rodar comandos para instalar dependências
-
-`yarn`
-
-Logo após instalar as dependências acima, instalar os seguintes pacotes
-
-`yarn add babel-eslint eslint-config-airbnb eslint-plugin-react-native --dev`
-
-depois de instalar todas as dependencias criar o arquivo _.eslintrc_, na pasta raiz com seguinte codigo
-
-> [.eslintrc - base curso goNative autor Diego Fernandes](https://gist.github.com/diego3g/fdc8dc51fd60b88e2e3611fb1b59d380 '.eslintrc')
-
-ou
+- #### Logo em seguida instalar outras dependencias
+* yarn add babel-eslint eslint-plugin-react-native -D
 
 ```json
 {
   "parser": "babel-eslint",
+  "extends": ["airbnb", "plugin:react-native/all"],
+  "plugins": ["react-native", "jsx-a11y", "import"],
   "env": {
     "browser": true,
     "jest": true
   },
-  "plugins": ["react-native", "jsx-a11y", "import"],
-  "extends": ["airbnb", "plugin:react-native/all"],
   "rules": {
     "react/destructuring-assignment": [
       true,
@@ -108,28 +85,8 @@ ou
       }
     ]
   },
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "paths": ["src"]
-      },
-      "babel-module": {}
-    }
-  },
   "globals": {
     "__DEV__": true
   }
 }
-```
-
-_No modelo do eslint acima, tem algumas regras adicionais que foram inseridas, por gosto pessoal._
-
-- _Outra OBS: Lembrando que esse arquvivo ja tem um código para usar o babel resolver, caso você nao use, por favor remover_
-
-```json
-settings": {
-  "import/resolver": {
-    "babel-module": {}
-  }
-},
 ```
