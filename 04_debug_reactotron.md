@@ -1,4 +1,4 @@
-# Reactotron
+# Reactotron Config
 
 Baixar o reactotron e olhar a documentação
 
