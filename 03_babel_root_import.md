@@ -49,7 +49,7 @@
   }
 ```
 
-##### \* criar o arquivo _.jsonconfig.json_ e adicionar os seguintes comandos para que o vsCode possa completar os caminhos das pastas!
+##### \* criar o arquivo _jsonconfig.json_ e adicionar os seguintes comandos para que o vsCode possa completar os caminhos das pastas!
 
 ```
 {
