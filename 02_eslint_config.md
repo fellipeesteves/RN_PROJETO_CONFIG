@@ -31,6 +31,7 @@ Sublime Text
 - Instalar todas as dependencias
 
 - #### Logo em seguida instalar outras dependencias
+
 * yarn add babel-eslint eslint-plugin-react-native -D
 
 ```json
@@ -43,17 +44,14 @@ Sublime Text
     "jest": true
   },
   "rules": {
-    "react/destructuring-assignment": [
-      true,
-      "always",
-      { "ignoreClassFields": true }
-    ],
     "react/jsx-filename-extension": [
       "error",
       {
         "extensions": [".js", ".jsx"]
       }
     ],
+    "react-native/sort-styles": "off",
+    "semi": "off",
     "global-require": "off",
     "no-console": "off",
     "import/prefer-default-export": "off",
@@ -61,27 +59,6 @@ Sublime Text
       "error",
       {
         "argsIgnorePattern": "^_"
-      }
-    ],
-    "arrow-body-style": 0,
-    "no-underscore-dangle": "off",
-    "arrow-parens": [2, "as-needed"],
-    "semi": "off",
-    "function-paren-newline": ["error", "consistent"],
-    "prefer-destructuring": [
-      "error",
-      {
-        "VariableDeclarator": {
-          "array": false,
-          "object": false
-        },
-        "AssignmentExpression": {
-          "array": false,
-          "object": false
-        }
-      },
-      {
-        "enforceForRenamedProperties": false
       }
     ]
   },
